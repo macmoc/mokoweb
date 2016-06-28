@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Raleway:400,700|Abril+Fatface&subset=latin,latin-ext")
+
+$main-font: "Raleway", sans-serif
+$main-color: #202020
+
+.main-font-styling
+	font-family: $main-font
+	font-size: 14px
+	
+=square-size ($size)
+	width: $size
+	height: $size
+
+*
+	box-sizing: border-box
+
+body 
+	margin: 0
+
+nav 
+	background-color: #313234
+	height: auto
+
+.container 
+	width: 100%
+	max-width: 1200px
+	margin: auto
+
+.row:before,
+.row:after 
+	content: ""
+	display: table
+	clear: both
+
+[class*="col-"] 
+	float: left
+	padding: 12px
+	width: 100%
+
+.col-m-1 
+	width: 8.33%
+.col-m-2 
+	width: 16.66%
+.col-m-3 
+	width: 25%
+.col-m-4 
+	width: 33.33%
+.col-m-5 
+	width: 41.66%
+.col-m-6 
+	width: 50%
+.col-m-7 
+	width: 58.33%
+.col-m-8 
+	width: 66.66%
+.col-m-9 
+	width: 75%
+.col-m-10 
+	width: 83.33%
+.col-m-11
+	width: 91.66%
+.col-m-12
+	width: 100%
+
+header
+	nav
+		ul 
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			font-family: $main-font
+
+header
+	nav
+		ul
+			li 
+				display: inline-block
+
+.row:before,
+.row:after 
+	content
+	display: table
+
+.row:after 
+	clear: both
+
+header
+	nav
+		ul
+			li
+				a 
+					line-height: 50px
+					padding: 0 20px
+					display: block
+					color: #FFF
+					text-decoration: none
+					text-transform: uppercase
+
+header
+	nav
+		ul
+			li
+				a:hover 
+					color: #00C7E8
+
+header
+	nav
+		img 
+			padding: 10px 0
+			width: 150px
+
+.hero 
+	background-image: url(https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?format=auto&auto=compress&dpr=1&crop=entropy&fit=crop&w=1600&h=1067&q=80)
+	background-size: 100%
+	background-repeat: no-repeat
+	max-width: 1200px
+	margin: 0 auto
+	height: 400px
+	
+.slogan 
+	background-color: rgba(233,233,233,0.1)
+	width: 400px
+	max-width: 800px
+	margin: 100px 0
+	float: right
+
+.slogan
+	h1 
+		font-family: $main-font
+		text-align: center
+		color: white
+
+.icon-btn 
+	padding-top: 10px
+	+square-size(150px)
+	color: #FFF
+	border: 0
+	cursor: pointer
+	background-color: #1D1610
+	text-align: center
+	margin-top: 20px
+
+button 
+	display: block
+	margin: 0 auto
+
+.icons 
+	background-color: grey
+	height: 200px
+	margin: 0 auto
+
+.icon-btn:hover
+	background-color: green
+
+i.fa 
+	font-size: 32px
+	color: #FFF
+
+.text 
+	text-align: center
+	@extend .main-font-styling
+	max-width: 1200px
+	margin: 0 auto
+
+.galery 
+	text-align: center
+	overflow: hidden
+
+.team .col-m-3 
+	img,
+.galery .col-m-3 
+	img
+		width: 100%
+		display: block
+
+.galery .col-m-3
+	img:hover
+		cursor: pointer
+
+.galery .col-m-3 
+	position: relative
+	padding: 0
+
+.galery .layer 
+	position: absolute
+	top: 100%
+	+square-size(100%)
+	background-color: rgba(0,0,0, 0.5)
+	cursor: pointer
+
+.galery .col-m-3:hover .layer
+	top: 0
+	transition: top linear .1s
+
+.layer
+	i 
+	font-size: 30px
+	padding-top: 40%
+
+.team 
+	margin: 50px 0
+
+.team
+	.container
+		.row
+			.col-m-3 
+				padding: 0 15px
+
+.team
+	.container
+		.row
+			.col-m-3
+				img 
+					border-radius: 50%
+					border: 1px solid #FFF
+
+.team
+	.container
+		.row
+			.col-m-3
+				p 
+					@extend .main-font-styling
+					color: $main-color
+					text-align: center
+
+.imagetext 
+	border-top: 1px solid #1D1510
+	border-bottom: 1px solid #1D1510
+	font-family: $main-font
+	color: $main-color
+
+.col-m-4 
+	padding: 0 15px
+
+.col-m-4
+	img
+		margin-top: 5px
+		width: 100%
+		display: block
+
+.col-m-8 
+	font-family: $main-font
+	padding: 0 15px
+	text-align: justify
+
+.col-m-8 p 
+	font-size: 16px
+
+.number 
+	background-color: #EDEDED
+
+.number
+	.container
+		.row
+			.col-m-3 
+				padding: 0 15px
+				text-align: center
+				font-weight: bold
+
+.number
+	.container
+		.row
+			.col-m-3
+				h1 
+					color: $main-color
+					font-family: Kaushan Script
+
+.number
+	.container
+		.row
+			.col-m-3
+				p 
+					@extend .main-font-styling
+					color: darkblue
+
+footer 
+	background-color: #313234
+	color: #FFF
+	font-family: $main-font
+
+footer
+	.row
+		.col-m-4 
+			padding: 0 15 px
+
+.icon2-btn 
+	padding-top: 10px
+	+square-size(55px)
+	color: #FFF
+	border: 0
+	cursor: pointer
+	background-color: #1D1610
+	text-align: center
+	margin-top: 20px
+		
+@media (min-width: 480px) and (max-width: 767px) 
+	header>nav>ul 
+		float: none
+	
+	header
+		nav
+			ul
+				li 
+					display: block
+	
+	nav 
+		text-align: center
+	
+	.hero 
+		background-size: 130%
+		background-position: center
+	
+	.slogan 
+		max-width: 100%
+		margin-top: 200px
+	
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6
+		width: 50%
+	.col-m-7
+		width: 58.33%
+	.col-m-8
+		width: 66.66%
+	.col-m-9
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11
+		width: 91.66%
+	.col-m-12
+		width: 100%
+
+@media (max-width: 479px) 
+	[class*="col-m-"] 
+		padding: 12px
+		width: 100%
+		
+	.icons 
+		background-color: grey
+		height: auto
+		margin: 0 auto
+		
+	header
+		nav
+			ul 
+				float: none
+	
+	header
+		nav
+			ul
+				li 
+					display: block
+	
+	nav 
+		text-align: center
+	
+	.hero 
+		background-size: 190%
+		background-position: center
+	
+	.slogan 
+		max-width: 100%
+		margin-top: 200px
+	
+	.col-s-1
+		width: 8.33%
+	.col-s-2
+		width: 16.66%
+	.col-s-3
+		width: 25%
+	.col-s-4
+		width: 33.33%
+	.col-s-5
+		width: 41.66%
+	.col-s-6
+		width: 50%
+	.col-s-7
+		width: 58.33%
+	.col-s-8
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10
+		width: 83.33%
+	.col-s-11
+		width: 91.66%
+	.col-s-12
+		width: 100%
+
+    
+	
